@@ -25,7 +25,7 @@ export function setUser(user) {
       email: user.email,
     },
     SECRET_KEY,
-    { expiresIn: "20s" }
+    { expiresIn: "40s" }
   );
   // console.log('Decoded Token:', jwt.decode(token));
   return token;
