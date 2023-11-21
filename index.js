@@ -45,16 +45,6 @@ app.use(express.static("public")); // publically we can access all the fines int
 // app.use(checkForAuthentication);
 
 app.get("/", async (request, response) => {
-  // response.clearCookie('token');
-  // response.clearCookie('token2');
-  // response.clearCookie('token3');
-  // response.clearCookie('userToken');
-  // response.clearCookie('refreshToken');
-  // response.clearCookie('private-token');
-  response.setHeader("charset", "utf-8");
-  const ourToken = request.cookies;
-  const user = getUser(ourToken.userTicket);
-  console.log(user);
   response.send("Cookies cleared and APIs working");
 });
 
